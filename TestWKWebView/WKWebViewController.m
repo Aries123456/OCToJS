@@ -36,6 +36,8 @@
     [config.userContentController addScriptMessageHandler:self name:@"Color"];
     [config.userContentController addScriptMessageHandler:self name:@"Param"];
     
+//    [config.userContentController removeScriptMessageHandlerForName:@"Back"];
+    
     self.webView = [[WKWebView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT - 300) configuration:config];
     // UI代理
     self.webView.UIDelegate = self;
